@@ -1,0 +1,218 @@
+/* main css */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-color: #fafafa;
+}
+
+/* header styles */
+header {
+  width: 100%;
+  display: grid;
+  background-color: #ffffff;
+  grid-template-columns: 1fr 12fr 2fr;
+  grid-template-rows: 50px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.ctn-logo {
+  /* border: 1px solid yellow; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ctn-logo img {
+  width: 50%;
+}
+
+.ctn-input {
+  /* border: 1px solid red; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ctn-input input {
+  padding: 13px;
+  width: 50%;
+  height: 80%;
+  border-radius: 10px;
+  margin: 0 auto;
+  border: none;
+  box-shadow: -1px 3px 7px #eee;
+  background-color: rgba(49, 31, 242, 0.0305);
+}
+
+.ctn-input input::placeholder {
+  color: #2f1ff2;
+  font-size: 13px;
+
+  font-weight: 200;
+}
+
+.ctn-icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.ctn-icons img {
+  width: 19%;
+}
+
+/* title style */
+
+.ctn-title {
+  /* border: 1px solid grey; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+}
+
+.ctn-title h1 {
+  color: #2f1ff2;
+  font-weight: 200;
+}
+
+/* nav styles */
+
+nav {
+  /* border: 1px solid darkblue; */
+  transition: all 2s;
+}
+
+nav .menu-list {
+  /* border: 1px solid pink;; */
+  /* display: flex; */
+}
+
+nav .menu-item {
+  display: inline;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding-bottom: 7px;
+  color: #98979b;
+  font-size: 13px;
+}
+
+.menu-item.active {
+  color: #2f1ff2;
+  /* border-bottom: 2px solid #2F1FF2; */
+  font-size: 15px;
+}
+
+.menu-item.active::before {
+  content: ""; /* ajoute un element juste avant le lien active */
+  position: absolute; /* cela permet à l'élement de sortir du flux */
+  margin-top: 25px;
+  width: 27px;
+  border-bottom: 3px solid #2f1ff2; /* j'applique un bordure bottom sur l'element */
+}
+
+.menu-item a {
+  font-weight: 200;
+  font-family: fantasy;
+}
+
+.menu-item a {
+  text-decoration: none;
+}
+
+/* list food style */
+
+.food-list {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  margin: 10px;
+  border-radius: 9px;
+  border: 1px solid #e1e1e1;
+  box-shadow: 7px 5px 10px #fefefe;
+  transition: transform 5s;
+}
+
+.card div {
+  margin-bottom: 5px;
+}
+
+.card-body {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-column-gap: 2%;
+}
+
+.card-img,
+.card-description {
+  grid-column: 1/-1;
+}
+
+.card-title,
+.card-price {
+  margin: 7px;
+  height: 40px;
+}
+
+.card-price {
+  display: flex;
+  justify-content: flex-end;
+  /* border: 1px solid #2F1FF2; */
+}
+
+.card-description {
+  padding: 7px;
+  /* border: 1px solid #2F1FF2; */
+}
+
+.card-title h4,
+.card-price h5 {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.card-description p,
+.card-title {
+  font-size: 14px;
+  color: #98979b;
+  font-weight: 100;
+}
+
+.card .card-img img {
+  width: 100%;
+  height: 210px;
+  border-radius: 8px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.card-footer {
+  border-top: 0.7px solid #e1e1e1;
+  margin-right: 120px;
+}
+
+.card-footer button {
+  width: 80%;
+  margin-top: 5px;
+}
+
+.btn.btn-primary {
+  padding: 10px;
+  border: none;
+  font-size: 15px;
+  background-color: transparent;
+  color: #2f1ff2;
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+
+.btn.btn-primary:active,
+.btn.btn-primary:enabled {
+  border: none;
+}

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="styles_dst.css">
+    <title>Tdsi Food</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="page_prof">
+
+        <!-- start div header  -->
+        <header>
+            <div class="ctn-logo">
+                <img src="images/icons/logo@2x.png" />
+            </div>
+            <div class="ctn-input">
+                <input type="search" placeholder="Que voulez-vous manger ?" />
+            </div>
+            <div class="ctn-icons">
+                <img src="images/icons/notification@2x.png" />
+                <img src="images/icons/user_avatar@2x.png" />
+            </div>
+        </header>
+        <!-- end div header  -->
+
+        <!-- start title of the page -->
+        <div class="ctn-title">
+            <h1 class="title">
+                Découvrez les plats que nous avons pour vous.
+            </h1>
+        </div>
+        <!-- end title of the page -->
+
+        <!-- start nav links -->
+        <nav>
+            <ul class="menu-list">
+                <li class="menu-item active">
+                    <a href="#"> Menu du jour</a>
+                </li>
+                <li class="menu-item"> Samedi</li>
+                <li class="menu-item"> Dimanche</li>
+                <li class="menu-item"> Lundi</li>
+                <li class="menu-item"> Mardi</li>
+                <li class="menu-item"> Mercredi</li>
+                <li class="menu-item"> Jeudi</li>
+            </ul>
+        </nav>
+        <!-- end nav links -->
+
+        <!-- start food list -->
+        <div class="food-list">
+
+            <!-- start card food item -->
+            <div class="card riz_au_poisson">
+                <div class="card-body">
+                    <div class="card-img">
+                        <img src="images/riz_au_poisson.jpeg" />
+                    </div>
+                    <div class="card-title">
+                        <h4>Thiéboudieune</h4>
+                    </div>
+                    <div class="card-price">
+                        <h5>1000 fcfa</h5>
+                    </div>
+                    <div class="card-description">
+                        <p>
+                            Le Thiéboudiene ou bien riz ou poisson est
+                            Un plat très connu au Sénégal de par sa …
+                        </p>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <button class="btn btn-primary"> Commander</button>
+                </div>
+            </div>
+            <!-- end card food item -->
+
+            <!-- start card food item -->
+            <div class="card mbaxal_saloume ">
+                <div class="card-body">
+                    <div class="card-img">
+                        <img src="images/mbaxal_saloume.jpg" />
+                    </div>
+                    <div class="card-title">
+                        <h4>Mbaxalou Saloume</h4>
+                    </div>
+                    <div class="card-price">
+                        <h5>1000 fcfa</h5>
+                    </div>
+                    <div class="card-description">
+                        <p>
+                            Mbaxalou Saloum est un plat à découvrir si vous ne
+                            L’avez jamais gouter. C’est un plat très rich qui est…
+                        </p>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <button class="btn btn-primary"> Commander</button>
+                </div>
+            </div>
+            <!-- end card food item -->
+
+            <!-- start card food item -->
+            <div class="card coucous_poulet">
+                <div class="card-body">
+                    <div class="card-img">
+                        <img src="images/coucous_poulet.jpg" />
+                    </div>
+                    <div class="card-title">
+                        <h4>Yassa Guinar</h4>
+                    </div>
+                    <div class="card-price">
+                        <h5>1000 fcfa</h5>
+                    </div>
+                    <div class="card-description">
+                        <p>
+                            Le Yassa Guinar ou Riz au poulet est un plat très
+                            riche. Il est réalisé de base par l’oignon, le riz, et la …
+                        </p>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <button class="btn btn-primary"> Commander</button>
+                </div>
+            </div>
+            <!-- end card food item -->
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="animation">
+            <div class="carrousel">
+                <div class="boite">
+                    <div class="image image1">
+                        <img src="images/mafeee.jpeg" alt="" class="image01">
+                    </div>
+                    <div class="image">
+                        <img src="images/poulet-mafé.jpeg" alt="" class="image2">
+                    </div>
+                    <div class="image">
+                        <img src="images/thiéré.jpeg" alt="" class="image3">
+                    </div>
+                </div>
+                <div class="label_radio">
+                    <label for="radio1" class="radio1"> </label>
+                    <label for="radio2" class="radio2"> </label>
+                    <label for="radio3" class="radio3"> </label>
+                </div>
+            </div>
+            <div class="desc">
+                <div class="titre_prix">
+                    <span class="titre_pla">Thiéboudieune</span>
+                    <span class="unitaire_prix">1000 fcfa</span>
+                </div>
+                <div class="carte_desc">
+                    <p>
+                        Le Thiéboudiene ou bien riz ou poisson est
+                        Un plat très connu au Sénégal de par sa tuc ainsi de suite …
+                    </p>
+                </div>
+                <div class="decompte">
+                    <span>Nombre de plats :</span>
+                    <div class="symbole">
+                        <div><img src="images/moins.png" alt="moins" class="moins"></div>
+                        <input type="text" name="" id="" value="1" class="nombre_de_plats ">
+                        <div><img src="images/plus.png" alt="plus" class="plus"></div>
+                    </div>
+                </div>
+                <div class="prix">
+                    <div class="total">
+                        Total
+                        <p class="produis_prix">1x1000</p>
+                    </div>
+                    <div> <span class="somme">3000</span><span class="fcfa">fcfa</span>
+                    </div>
+                </div>
+                <button class="valider">Valider la commande</button>
+            </div>
+        </div>
+        <span class="Autresplats">Autres plats</span>
+        <div class="les_plats">
+            <div>
+                <img src="images/mafé.jpeg" alt="" class="image4">
+                <p class="titre_plats titre_image4  ">Mafé yapp</p>
+                <p class="prix_plat prix_image4 ">1 500 fcfa</p>
+            </div>
+            <div>
+                <img src="images/mafé.jpeg" alt="" class="image5">
+                <p class="titre_plats titre_image5">Mafé yapp</p>
+                <p class="prix_plat prix_image5">1 500 fcfa</p>
+            </div>
+            <div>
+                <img src="images/mafé.jpeg" alt="" class="image6">
+                <p class="titre_plats titre_image6">Mafé yapp</p>
+                <p class="prix_plat prix_image6">1 500 fcfa</p>
+            </div>
+            <div>
+                <img src="images/mafé.jpeg" alt="" class="image7">
+                <p class="titre_plats titre_image7">Mafé yapp</p>
+                <p class="prix_plat prix_image7">1 500 fcfa</p>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="main_dst.js"></script>
+
+</body>
+
+</html>
